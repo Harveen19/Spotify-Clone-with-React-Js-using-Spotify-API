@@ -45,7 +45,7 @@ overflow: hidden;
         padding: 1rem;
         gap: 1rem;
         flex-direction: column;
-        height: 42vh;
+        height: 41vh;
         max-height: 100%;
         overflow: auto;
         &::webkit-scrollbar{
@@ -54,7 +54,6 @@ overflow: hidden;
                 background-color: rgba(255, 255, 255, 0.6);
             }
         }
-    }
     li{
         gap: 1rem;
         display: flex;
