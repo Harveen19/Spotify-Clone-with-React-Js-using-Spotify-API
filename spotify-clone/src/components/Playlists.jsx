@@ -4,7 +4,6 @@ import axios from "axios";
 import { reducerCases } from "../utils/Constants";
 
 import styled from "styled-components";
-
 export default function Playlists() {
     const [{ token, playlists },dispatch] = useStateProvider();
     useEffect(() => {
@@ -38,12 +37,23 @@ export default function Playlists() {
 }
 
 const Container = styled.div`
+height: 100%;
+overflow: hidden;
     ul{
         list-style-type: none;
         display: flex;
         padding: 1rem;
         gap: 1rem;
         flex-direction: column;
+        height: 42vh;
+        max-height: 100%;
+        overflow: auto;
+        &::webkit-scrollbar{
+            width: 0.7rem;
+            &-thumb{
+                background-color: rgba(255, 255, 255, 0.6);
+            }
+        }
     }
     li{
         gap: 1rem;
