@@ -45,10 +45,10 @@ overflow: hidden;
         padding: 1rem;
         gap: 1rem;
         flex-direction: column;
-        height: 41vh;
+        height: 55vh;
         max-height: 100%;
         overflow: auto;
-        &::webkit-scrollbar{
+        &::-webkit-scrollbar{
             width: 0.7rem;
             &-thumb{
                 background-color: rgba(255, 255, 255, 0.6);
