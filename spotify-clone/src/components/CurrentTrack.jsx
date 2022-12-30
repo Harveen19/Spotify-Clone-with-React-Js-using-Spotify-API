@@ -52,12 +52,10 @@ const Container = styled.div`
   display: flex;
   align-tems: center;
   gap: 1rem;
-  
   &__info{
     display: flex;
     flex-direction: column;
     gap: 0.3rem;
-    
     h4{
       color: white;
     }
